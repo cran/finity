@@ -20,8 +20,7 @@ get_chisq1_percentile <- function(value) {
 #' @param k Moment order (type: double)
 #' @return Moment value (type: double)
 #' @examples
-#' library(stabledist)
-#' rvs <- rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
+#' rvs <- stabledist::rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
 #' absolute_moment <- compute_absolute_moment(rvs, 2)
 #' @export
 compute_absolute_moment <- function(obs, k) {
@@ -43,8 +42,7 @@ compute_absolute_moment <- function(obs, k) {
 #' @return Trapani's Theta test statistic (type: double).
 #' @return Corresponding p-value (Chi^2(1) percentile) (type: double).
 #' @examples
-#' library(stabledist)
-#' rvs <- rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
+#' rvs <- stabledist::rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
 #' result <- finite_moment_test(rvs, 2)
 #' @export
 finite_moment_test <- function(obs, k, r = 0L, psi = 2, u = 1.0, force_random_variate_sample = 0L, ignore_errors = 0L, verbose = 0L, random_salting = 0L) {

@@ -44,7 +44,6 @@ Corresponding p-value (Chi^2(1) percentile) (type: double).
 Computes Trapani's (2016) finite moment test for moment of order k of the distribution of a given the sample of observations obs. Knowledge of the identity of the distribution is not required. The null hypothesis is that the moment is infinite; the alternative is that it is finite. The function takes parameters of the test as optional arguments; some insights into the impact the choice of parameter values has are given in Trapani (2016).
 }
 \examples{
-library(stabledist)
-rvs <- rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
+rvs <- stabledist::rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
 result <- finite_moment_test(rvs, 2)
 }

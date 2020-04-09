@@ -166,8 +166,7 @@ double get_chisq1_percentile(double value) {
 //' @param k Moment order (type: double)
 //' @return Moment value (type: double)
 //' @examples
-//' library(stabledist)
-//' rvs <- rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
+//' rvs <- stabledist::rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
 //' absolute_moment <- compute_absolute_moment(rvs, 2)
 //' @export
 // [[Rcpp::export]]
@@ -208,8 +207,7 @@ double compute_absolute_moment(arma::vec obs, double k) {
 //' @return Trapani's Theta test statistic (type: double).
 //' @return Corresponding p-value (Chi^2(1) percentile) (type: double).
 //' @examples
-//' library(stabledist)
-//' rvs <- rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
+//' rvs <- stabledist::rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
 //' result <- finite_moment_test(rvs, 2)
 //' @export
 // [[Rcpp::export]]
@@ -280,7 +278,7 @@ arma::vec finite_moment_test(arma::vec obs,
     long double mu_psi = compute_absolute_moment(obs, psi);
     // rescaling to mu* (Trapani 2016 eq 16)
     if (verbose) Rcpp::Rcout << "mu is: " << mu << std::endl;
-    mu = mu / pow(mu_psi, k / psi);
+    mu = mu / pow(((long double)mu_psi), ((long double)(k / psi)));
     if (verbose) Rcpp::Rcout << "   ...rescaled to: " << mu << std::endl;
     long double rescaling_factor_2 = pow(overloaded_std_norm_moment(psi), k / psi) / overloaded_std_norm_moment(k);
     // rescaling to mu** (Trapani 2016 eq 17)

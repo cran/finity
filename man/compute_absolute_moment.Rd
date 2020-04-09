@@ -18,7 +18,6 @@ Moment value (type: double)
 Computes the absolute moment of order k of a sample of observations.
 }
 \examples{
-library(stabledist)
-rvs <- rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
+rvs <- stabledist::rstable(100000, 1.9, 0.5, 1, 0, pm = 0)
 absolute_moment <- compute_absolute_moment(rvs, 2)
 }
