@@ -1,12 +1,12 @@
-cb42a8a2512ed668a702b6bdfd16868b *DESCRIPTION
+8c61188bbfc255926d2fc44987ea1ed2 *DESCRIPTION
 788803733f0176e0def46c1bb3d9510b *NAMESPACE
 b0206af5efd2cb8f5ce4f0681aa5891e *R/RcppExports.R
 50ebe7d2ab995526b397633d81613286 *R/example.R
 8581959305fe67ace8ddae1adfd47043 *README.md
-acd8d74c92338eabaaf7fc4b8e377ad4 *build/partial.rdb
+ab99cbd69890fbb8aacbccf8f61b45c5 *build/partial.rdb
 569e2af6c4f4d960cfa10f19bc8c1451 *man/compute_absolute_moment.Rd
 709d99617193f26f7f980e1e76dc6544 *man/finite_moment_test.Rd
 c93159dc6a7c555e6ba3fd1594f928b4 *man/finity-package.Rd
 349b0f88a6dec6c4fb4e2c3a0ddac2a4 *man/get_chisq1_percentile.Rd
 2facdab14a7c15bf7f31a279573e060e *src/RcppExports.cpp
-aa93bb0a0a3810f247843c96b1e5c0dc *src/finite_moment_test.cpp
+6ed68f1e5dc8a9020abe40d7c581b39c *src/finite_moment_test.cpp
