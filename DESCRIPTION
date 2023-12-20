@@ -1,8 +1,8 @@
 Package: finity
 Type: Package
 Title: Test for Finiteness of Moments in a Distribution
-Version: 0.1.4.1
-Date: 2020-04-22
+Version: 0.1.5
+Date: 2023-12-20
 Authors@R: c(person("Torsten", "Heinrich", role = c("aut", "cre"),
                      email = "torsten.heinrich@posteo.net"),
            person("Julian", "Winkler", role = c("aut"),
@@ -21,9 +21,9 @@ Description: The purpose of this package is to tests whether a given
 License: GPL (>= 2)
 Imports: Rcpp (>= 1.0.3), stabledist (>= 0.7)
 LinkingTo: Rcpp, RcppArmadillo, BH
-RoxygenNote: 7.0.0
+RoxygenNote: 7.2.3
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2020-04-22 21:28:52 UTC; ganesha
+Packaged: 2023-12-20 19:14:01 UTC; sha
 Repository: CRAN
-Date/Publication: 2020-04-23 16:10:19 UTC
+Date/Publication: 2023-12-20 19:20:12 UTC
